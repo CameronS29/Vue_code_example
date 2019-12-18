@@ -1,0 +1,82 @@
+@import "variables";
+
+.btq-form {
+    &__label {
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+.btq-form__group {
+    padding: 0 20px;
+    margin-bottom: 15px;
+    transition: all 400ms ease-in-out;
+    border-left: 0 solid rgba(255, 255, 255, 0);
+
+    &_error {
+        border-left: 7px solid $color-error;
+        padding-left: 13px;
+        color: $color-error;
+        .btq-form__label {
+            color: $color-error;
+        }
+        input {
+            border-color: $color-error;
+        }
+    }
+    &_success {
+        border-left: 7px solid $color-success;
+        padding-left: 13px;
+        color: $color-success;
+        .btq-form__label {
+            color: $color-success;
+        }
+        input {
+            border-color: $color-success;
+        }
+    }
+    &_success {
+        border-left: 7px solid #39C149;
+        padding-left: 13px;
+    }
+
+    &_full-width {
+        border-left: 7px solid transparent;
+        padding: 0 0 0 11px;
+        margin: 0;
+        width: calc(100% + 18px);
+        position: relative;
+        left: -18px;
+
+        &.btq-form__group_error {
+            border-left: 7px solid $color-error;
+        }
+        &.btq-form__group_success {
+            border-left: 7px solid $color-success;
+        }
+    }
+    &_no-padding {
+        padding: 0;
+    }
+}
+
+.text-area {
+    &__input {
+        width: 100%;
+        padding: 6px 12px;
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        border-radius: 3px;
+    }
+}
+
+.text-field {
+    &__input {
+        width: 100%;
+        padding: 6px 12px;
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        border-radius: 3px;
+    }
+}

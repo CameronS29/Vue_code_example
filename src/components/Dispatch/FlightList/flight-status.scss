@@ -1,0 +1,93 @@
+@import "./variables";
+@mixin status-color($color) {
+  background-color: $color;
+  border: 0 !important;
+  &:hover {
+    background-color: lighten($color, 10);
+  }
+  &:focus {
+    background-color: darken($color, 10);
+  }
+}
+
+.flight-list-table__status-btn_en-route {
+  @include status-color($status_enroute);
+}
+
+.flight-list-table__status-btn_canceled {
+  @include status-color($status_canceled);
+}
+
+.flight-list-table__status-btn_delayed {
+  @include status-color($status_delayed);
+}
+
+
+.flight-list-table__status-btn_landed {
+  @include status-color($status_landed);
+}
+
+
+.flight-list-table__status-btn_on-time {
+  @include status-color($status_ontime);
+}
+
+/* */
+
+.change-status_en-route.is-bordered {
+  color: $status_enroute;
+  border: 1px solid $status_enroute;
+  &.is-checked {
+    .el-radio__label {
+      color: lighten($status_enroute, 10);
+    }
+    border: 1px solid lighten($status_enroute, 10);
+  }
+}
+
+.change-status_canceled.is-bordered {
+  color: $status_canceled;
+  border: 1px solid $status_canceled;
+  &.is-checked {
+    .el-radio__label {
+      color: lighten($status_canceled, 10);
+    }
+    border: 1px solid lighten($status_canceled, 10);
+  }
+}
+
+.change-status_delayed.is-bordered {
+  color: $status_delayed;
+  border: 1px solid $status_delayed;
+  &.is-checked {
+    .el-radio__label {
+      color: lighten($status_delayed, 10);
+    }
+    border: 1px solid lighten($status_delayed, 10);
+  }
+}
+
+
+.change-status_landed.is-bordered {
+  color: $status_landed;
+  border: 1px solid $status_landed;
+  &.is-checked {
+    .el-radio__label {
+      color: lighten($status_landed, 10);
+    }
+    border: 1px solid lighten($status_landed, 10);
+  }
+
+}
+
+
+.change-status_on-time.is-bordered {
+  color: $status_ontime;
+  border: 1px solid $status_ontime;
+  &.is-checked {
+    .el-radio__label {
+      color: lighten($status_ontime, 10);
+    }
+    border: 1px solid lighten($status_ontime, 10);
+  }
+}

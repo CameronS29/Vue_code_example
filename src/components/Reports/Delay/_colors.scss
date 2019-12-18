@@ -1,0 +1,15 @@
+@import "../../../../scss/bs-variables";
+
+$scheduled-background: $dark-gray;
+$actual-background: lighten($black, 10%);
+
+$errors: (
+    maintenance: #b15c58,
+    late-passenger: #a6cc69,
+    late-aircraft: #5f8e7f,
+    weather: #4A90E2,
+    crew: #965fc9,
+    atc: #d9993a,
+    other: $red,
+    fuel: #8b7d78,
+);

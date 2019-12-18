@@ -1,0 +1,131 @@
+@import '../../../../scss/bs-variables';
+
+[draggable=true] {
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+
+.field__badge {
+    color: white;
+    background: #475a68;
+    cursor: move;
+    user-select: none;
+
+    &_rotate {
+        position: absolute;
+        top: calc(50% + 20px);
+
+        &_inner {
+            transform: rotate(-90deg);
+            transform-origin: 0 0;
+            width: 50px;
+        }
+    }
+
+    &_desktop {
+        display: none;
+    }
+
+    &_disabled {
+        opacity: 0.8;
+        cursor: no-drop;
+    }
+}
+
+.field_nowrap {
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.field_non-interactive {
+    cursor: default;
+}
+
+.passenger-table__field label {
+    display: block;
+}
+
+.passenger-table__badge,
+.passenger-table__field_badge {
+    width: 60px;
+}
+
+@media screen and (max-width: $screen-sm-max) {
+    .passenger-table__person {
+        display: flex;
+        flex-flow: row wrap;
+
+        position: relative;
+        margin: 15px 0;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.04);
+        }
+
+        .passenger-table__field {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+
+            &_full {
+                flex: 1 1 100%;
+            }
+
+            &_half {
+                flex: 1 1 50%;
+            }
+        }
+
+    }
+
+    .passenger-table__field.passenger-table__field_badge {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 20px;
+        padding: 0;
+    }
+
+    .field__badge_mobile {
+        width: 20px;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: $screen-md-min) {
+    .passenger-table__field label,
+    .field__badge_mobile {
+        display: none;
+    }
+
+    .passenger-table__button {
+        min-width: 0 !important;
+        text-align: center;
+        padding-top: 11px;
+        padding-left: 0;
+    }
+
+    .passenger-table__row:hover .passenger-table__field {
+        background: rgba(0, 0, 0, 0.04);
+    }
+
+    .passenger-table__field_readonly {
+        vertical-align: middle;
+
+        .field__badge {
+            margin-right: 20px;
+        }
+    }
+
+    .field__badge {
+        border-radius: 3px;
+        padding: 4px 7px;
+        margin-right: 5px;
+
+        &_desktop {
+            margin-top: 2px;
+            display: block;
+        }
+    }
+}

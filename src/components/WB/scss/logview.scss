@@ -1,0 +1,192 @@
+@import '../../../../scss/bs-variables';
+
+@media (max-width: $screen-xs-max) {
+    .wb-actions {
+        margin-top: 20px;
+    }
+}
+
+
+.panel-body h2 {
+    margin: 0;
+}
+
+.wb-detail {
+    &__container {
+        padding-left: 20px;
+        float: left;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__form {
+        width: 60%;
+
+        &_locks {
+            width: 70%;
+        }
+    }
+
+    .form-group__message {
+        font-size: .85em;
+        display: block;
+    }
+
+    &__graph {
+        width: 40%;
+
+        &_locks {
+            width: 30%;
+        }
+    }
+
+    &__full {
+        flex: 1 1 100%;
+    }
+
+    &__confirmation-text {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    &__block-splash .splash__visible-content {
+        background: transparentize(#f3f3f4, .5);
+    }
+}
+
+@media (max-width: $screen-md-max) {
+    .wb-detail {
+        &__form,
+        &__graph {
+            width: 100%;
+            flex: 1 1 100%;
+        }
+
+        &__form {
+            order: 0;
+        }
+
+        &__graph {
+            order: 1;
+            padding-left: 0;
+        }
+    }
+}
+
+.log-update {
+    &__aircraft-values {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    &__item {
+        margin-left: 20px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__fuel {
+        flex: 4 4;
+    }
+
+    &__aircraft-box {
+        flex: 3 3;
+    }
+
+    &__tsa-box {
+        flex: 1 1;
+    }
+
+    &__calc-table {
+        flex: 47 1;
+    }
+
+    &__gate-box {
+        &_upper {
+            flex: 1 1;
+            display: block;
+        }
+
+        &_lower {
+            flex: 6 1;
+            align-self: flex-start;
+            display: none;
+        }
+
+        @media screen and (min-width: $screen-sm-min) {
+            &_upper {
+                display: none;
+            }
+
+            &_lower {
+                display: block;
+            }
+        }
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+        &__aircraft-values {
+            flex-flow: row wrap;
+        }
+
+        &__item {
+            margin-left: 0;
+            flex: 1 1 100%;
+        }
+
+        &__calc-table {
+            width: 100%;
+        }
+
+        &__tsa-box,
+        &__gate-box_upper  {
+            flex: 1 1 calc(50% - 20px);
+        }
+
+        &__gate-box_upper {
+            margin-right: 20px;
+        }
+    }
+}
+
+.wrapper-content {
+    animation-fill-mode: none !important;
+}
+
+.passenger-table__cell,
+.passenger-table__field,
+.wb-crew__cell {
+    border: 1px solid transparent !important;
+}
+
+.error {
+    color: $--color-danger !important;
+    background: $--color-danger-lighter !important;
+    border: $--border-width-base $--border-style-base $--color-danger-light;
+    border-radius: $--border-radius-base;
+    margin: -$--border-width-base;
+
+    input, input:hover, .el-input__inner {
+        border-color: $--color-danger;
+        color: $--color-danger;
+    }
+}
+
+td.error {
+    border-radius: 0;
+    margin: 0;
+}
+.btn-block {
+  margin-bottom: 10px;
+}

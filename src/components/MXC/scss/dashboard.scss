@@ -1,0 +1,37 @@
+.aircraft-controls {
+  display: flex;
+  align-items: center;
+
+  > *:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &__tail-select {
+    width: 190px;
+  }
+}
+
+.aircraft-table {
+  .el-button--mini {
+    padding: 5px 15px;
+  }
+  .el-tag {
+    line-height: 24px;
+    height: 24px;
+  }
+}
+
+.swap-btn, .correction-btn {
+  background: #1ab394;
+  color: #fff;
+  padding: 0 10px;
+  display: inline-block;
+  border-radius: 3px;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.correction-btn {
+  background: #4963dd;
+}

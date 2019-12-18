@@ -1,0 +1,32 @@
+.section {
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    &:not(:last-of-type) {
+        border-bottom: 1px solid #f1f1f1;
+    }
+    .section-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+
+.el-pagination {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.swap {
+    border: 0;
+    background: #1c84c6;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+h1.swap-list-title {
+    font-size: 22px;
+    border: 0;
+    margin-bottom: 15px;
+}

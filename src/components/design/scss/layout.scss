@@ -1,0 +1,28 @@
+.box {
+    background: #fff;
+    padding: 25px;
+}
+
+.form-aligned {
+    .form-row {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 10px;
+        align-items: center;
+        label {
+            flex: 0 0 150px;
+            padding-right: 10px;
+            text-align: right;
+        }
+        .input-holder {
+            flex-grow: 1;
+        }
+        input {
+            border-radius: 3px;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            width: 100%;
+        }
+    }
+
+}

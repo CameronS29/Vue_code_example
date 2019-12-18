@@ -1,0 +1,92 @@
+@import "../../../../scss/bs-variables";
+
+.el-message-box {
+    max-width: 100vw;
+    &__content {
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 580px) {
+    .el-date-range-picker {
+        left: 0;
+        max-width: 100vw;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        .el-picker-panel {
+            &__body-wrapper {
+                min-width: 580px;
+            }
+        }
+    }
+}
+
+.flatpickr-calendar {
+    @media screen and (max-width: 405px) {
+        right: 0 !important;
+        max-width: 100vw;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+.flatpickr-months {
+    background: #1bbc9b;
+
+    @media screen and (max-width: 405px) {
+        width: 350px;
+    }
+    .flatpickr-prev-month, .flatpickr-next-month {
+        @media screen and (max-width: 405px) {
+            position: relative !important;
+        }
+    }
+}
+
+.flatpickr-month {
+    height: 36px !important;
+}
+
+.flatpickr-innerContainer {
+    @media screen and (max-width: 405px) {
+        width: 350px;
+    }
+}
+
+.el-switch {
+  &__label {
+    color: $text-color;
+  }
+}
+
+.table_extra-small {
+  td {
+    padding: 0;
+    font-size: 11px;
+  }
+  .el-table__header {
+    th {
+      padding: 0;
+      font-size: 11px;
+    }
+  }
+}
+
+.el-dialog {
+  &__header {
+    padding: 10px;
+  }
+  &__title {
+    color: $text-color;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__headerbtn {
+    top: 12px;
+  }
+  &__body {
+    padding: 10px;
+  }
+}

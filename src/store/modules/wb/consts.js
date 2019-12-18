@@ -1,0 +1,68 @@
+export const RESET = 'RESET';
+export const SOFT_RESET = 'SOFT_RESET';
+export const RECEIVE_AIRCRAFT_TYPES = 'RECEIVE_AIRCRAFT_TYPE';
+export const RECEIVE_AIRCRAFTS = 'RECEIVE_AIRCRAFTS';
+export const RECEIVE_USERS = 'RECEIVE_USERS';
+export const RECEIVE_AIRPORTS = 'RECEIVE_AIRPORTS';
+export const RECEIVE_PILOTS = 'RECEIVE_PILOTS';
+export const RECEIVE_LOG = 'RECEIVE_LOG';
+export const UPDATE_LOG = 'UPDATE_LOG';
+export const EXTERNAL_LOG_UPDATE = 'EXTERNAL_LOG_UPDATE';
+export const SET_PARTIAL_UPDATE = 'SET_PARTIAL_UPDATE';
+export const RESET_PARTIAL_UPDATE = 'RESET_PARTIAL_UPDATE';
+export const SET_CG_LIMITS = 'SET_CG_LIMITS';
+export const SET_TRIM_DATA = 'SET_TRIM_DATA';
+export const SET_ZERO_FUEL_DATA = 'SET_ZERO_FUEL_DATA';
+export const SET_BLOCK = 'SET_BLOCK';
+export const SET_REOPEN = 'SET_REOPEN';
+export const SET_ERRORS = 'SET_ERRORS';
+export const SET_VALIDATE = 'SET_VALIDATE';
+export const SET_SAVED = 'SET_SAVED';
+export const TOGGLE_DETAILED = 'TOGGLE_DETAILED';
+
+export const STATUS_OPEN = 1;
+export const STATUS_READY_FOR_APPROVAL = 2;
+export const STATUS_PIC_APPROVAL = 3;
+export const STATUS_DISPATCH_APPROVAL = 4;
+export const STATUS_COMPLETED = STATUS_DISPATCH_APPROVAL;
+
+
+// Passenger
+export const RECEIVE_PASSENGERS = 'RECEIVE_PASSENGERS';
+export const ORDER_DESC = 'ORDER_DESC';
+export const ORDER_ASC = 'ORDER_ASC';
+export const SET_PENDING = 'SET_PENDING';
+export const UPDATE_PASSENGER = 'UPDATE_PASSENGER';
+export const UPDATE_PASSENGER_BY_ID = 'UPDATE_PASSENGER_BY_ID';
+export const RESET_PASSENGERS = 'RESET_PASSENGERS';
+export const SOFT_RESET_PASSENGERS = 'SOFT_RESET_PASSENGERS';
+export const APPLY_SEAT_MAP = 'APPLY_SEAT_MAP';
+
+
+// Logs
+export const SET_PAGE_SIZE = 'SET_PAGE_SIZE';
+export const SET_PAGE = 'SET_PAGE';
+export const SET_LOAD_STATUS = 'SET_LOAD_STATUS';
+export const DEFAULT_PAGE_SIZE = 100;
+
+
+// Calculations
+export const UPDATE_CALCULATIONS = 'UPDATE_CALCULATIONS';
+
+export function wbSpaced(mutation) {
+  return "wb/" + mutation;
+}
+
+// Aircraft params
+export const SET_ARMS = 'SET_ARMS';
+export const SET_FUEL_LOADS = 'SET_FUEL_LOADS';
+export const SET_ACTIVE_AIRCRAFT_TYPE_ID = 'SET_ACTIVE_AIRCRAFT_TYPE_ID';
+export const SET_ACTIVE_AIRCRAFT_ID = 'SET_ACTIVE_AIRCRAFT_ID';
+export const SET_ARM_VALUE = 'SET_ARM_VALUE';
+export const UPDATE_FUEL_LOAD = 'UPDATE_FUEL_LOAD';
+export const DELETE_FUEL_LOAD = 'DELETE_FUEL_LOAD';
+export const ADD_FUEL_LOAD = 'ADD_FUEL_LOAD';
+export const SET_ENVELOPES = 'SET_ENVELOPES';
+export const UPDATE_ENVELOPE = 'UPDATE_ENVELOPE';
+export const DELETE_ENVELOPE = 'DELETE_ENVELOPE';
+export const ADD_ENVELOPE = 'ADD_ENVELOPE';

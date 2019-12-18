@@ -1,0 +1,11 @@
+@mixin numpad-field() {
+    & {
+        -moz-appearance: textfield;
+        -ms-appearance: textfield;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+    }
+}
